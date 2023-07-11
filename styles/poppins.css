@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    src:   url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    src:   url(fonts/Poppins-Italic.ttf);
+}
+::selection{
+    background: #00d0ff;
+    color: #022323;
+}
+::-webkit-scrollbar, ::-moz-scrollbar {
+    appearance: none;
+    background: none;
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb, ::-moz-scrollbar-thumb{
+    appearance: none;
+    background: #287dfc;
+    border-radius: 3px;
+}
+@media (prefers-color-scheme:light) {
+    ::selection{
+    background: #022323;
+    color: #00d0ff;
+    }
+}

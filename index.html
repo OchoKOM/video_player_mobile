@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OchoKOM - Video player</title>
+    <link rel="stylesheet" href="styles/font-awesome.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="videoPlayer">
+        <video id="mainVideo" controlsList="nodownload" sizes="720" src="assets/Introducing_Microsoft_Teams_Premium,_now_available(720p).mp4" poster="assets/bg.jpeg">
+          <source sizes="1080" src="assets/Introducing_Microsoft_Teams_Premium,_now_available(1080p).mp4" type="video/mp4">
+          <source sizes="720" src="assets/Introducing_Microsoft_Teams_Premium,_now_available(720p).mp4" type="video/mp4">
+          <source sizes="480" src="assets/Introducing_Microsoft_Teams_Premium,_now_available(480p).mp4" type="video/mp4">
+          <source sizes="360" src="assets/Introducing_Microsoft_Teams_Premium,_now_available(360p).mp4" type="video/mp4">
+          <source sizes="240" src="assets/Introducing_Microsoft_Teams_Premium,_now_available(240p).mp4" type="video/mp4">
+          <source sizes="144" src="assets/Introducing_Microsoft_Teams_Premium,_now_available(144p).mp4" type="video/mp4">
+          <track id="track2" label="English" kind="subtitles" src="/assets/[English] Introducing Microsoft Teams Premium.vtt" srclang="en">
+          <track id="track1" label="Français" kind="subtitles" src="assets/[French] Introducing Microsoft Teams Premium.vtt" srclang="fr">
+          <track id="track2" label="Español" kind="subtitles" src="assets/[Spanish] Introducing Microsoft Teams Premium.vtt" srclang="es">
+          <track id="track2" label="Português" kind="subtitles" src="assets/[Portuguese] Introducing Microsoft Teams Premium.vtt" srclang="por">
+          <track id="track2" label="Deutsch" kind="subtitles" src="assets/[German] Introducing Microsoft Teams Premium.vtt" srclang="de">
+          <track id="track2" label="中国人" kind="subtitles" src="assets/[Chinese] Introducing Microsoft Teams Premium.vtt" srclang="zh">
+        </video>
+      </div>
+    </div>
+  <footer>
+    <span>Copyright © 2023  <a href="https://www.youtube.com/@ochokom/featured">OchoKOM</a> | All rights  reserved</span>
+  </footer>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/elements.js"></script>
+    <script src="scripts/controls.js"></script>
+</body>
+</html>
